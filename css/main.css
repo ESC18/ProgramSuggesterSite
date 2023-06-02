@@ -4,9 +4,48 @@
     border: 0;
 }
 
-body {
-    background-color: black;
+@keyframes underlayColor {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 1000% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
+body {
+    background-color: black;
+    background-color: #151515;
+    overflow-x: hidden;
+}
+.header {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 90% 100%, 0% 100%);
+}
+.Logo {
+    position: absolute;
+    top: -30px;
+    height: 150px;
+    left: 10px;
+    z-index: 50;
+}
+.navunderlay {
+    position: absolute;
+    top: 0;
+    height: 115px;
+    width: 100vw;
+    background: linear-gradient(-90deg, #F3B700, #F18701, #DF2935, #961f01, #DF2935, #F18701,#F3B700);
+    background-size: 500% 100%;
+    animation: underlayColor 250s ease-in-out 0s infinite;
+}
 
 /* clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 88% 99%, 0% 99%, */
