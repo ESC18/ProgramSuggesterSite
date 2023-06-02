@@ -33,7 +33,7 @@
 body {
     background-color: black;
     background-color: #151515;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .headerDiv {
@@ -126,22 +126,32 @@ body {
     border-radius: 10px;
     transition: all 0.1s;
 }
-.survey:hover {
-    background-color: rgb(78, 78, 78);
-}
-h1 {
+
+label {
     position: relative;
     left: 10px;
+    display: block;
+    font-size: 40px;
+    background: linear-gradient(-90deg, #F3B700, #F18701, #DF2935, #961f01, #DF2935, #F18701, #F3B700);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: underlayColor 250s ease-in-out 0s infinite;
 }
 
 select{
+    margin-left: 20px;
     width: 150px;
     height: 30px;
     padding: 5px;
-    color: red;
-    font-size: 20px;
-    font-family: Quicksand;
+    color: #06AED5;
+    font-size: 18px;
+    font-family: Roboto Mono;
+    background-color: #151515;
+    border-radius: 10px;
   }
 select option { 
-    color: #FF6600; 
+    color: #4357AD; 
+    font-family: Roboto Mono;
 }
+
