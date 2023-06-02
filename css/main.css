@@ -111,6 +111,8 @@ body {
     margin-left:20px;
     border-radius: 10px;
     transition: all 0.1s;
+    color: white;
+    font-family: Quicksand;
 }
 .results {
     position: absolute;
@@ -124,8 +126,22 @@ body {
     border-radius: 10px;
     transition: all 0.1s;
 }
+.survey:hover {
+    background-color: rgb(78, 78, 78);
+}
+h1 {
+    position: relative;
+    left: 10px;
+}
 
-.hover:hover {
-    border: white 5px solid;
-    border-radius: 10px;
+select{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    color: red;
+    font-size: 20px;
+    font-family: Quicksand;
+  }
+select option { 
+    color: #FF6600; 
 }
