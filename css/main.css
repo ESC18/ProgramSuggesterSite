@@ -17,6 +17,7 @@
         background-position: 0% 0%;
     }
 }
+
 @keyframes rotateUnderlayColor {
     from {
         transform: translate(-50%) rotate(0deg);
@@ -34,6 +35,11 @@ body {
     background-color: #151515;
     overflow: hidden;
 }
+
+.headerDiv {
+    z-index: 200;
+}
+
 .header {
     position: absolute;
     top: 0px;
@@ -42,6 +48,7 @@ body {
     background-color: black;
     clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 90% 100%, 0% 100%);
 }
+
 .Logo {
     position: absolute;
     top: -3vh;
@@ -49,15 +56,17 @@ body {
     left: 10px;
     z-index: 50;
 }
+
 .navunderlay {
     position: absolute;
     top: 0;
     height: 115px;
     width: 100vw;
-    background: linear-gradient(-90deg, #F3B700, #F18701, #DF2935, #961f01, #DF2935, #F18701,#F3B700);
+    background: linear-gradient(-90deg, #F3B700, #F18701, #DF2935, #961f01, #DF2935, #F18701, #F3B700);
     background-size: 500% 100%;
     animation: underlayColor 250s ease-in-out 0s infinite;
 }
+
 .content {
     position: absolute;
     top: 130px;
@@ -70,15 +79,16 @@ body {
     border-radius: 20px;
     overflow: hidden;
 }
+
 .content::before {
     content: '';
     left: 50%;
     top: -100vh;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
     width: 20vw;
     height: 300vh;
-    background: linear-gradient(-90deg, #F3B700, #F18701, #DF2935, #961f01, #DF2935, #F18701,#F3B700);
+    background: linear-gradient(-90deg, #F3B700, #F18701, #DF2935, #961f01, #DF2935, #F18701, #F3B700);
     background-size: 300% 100%;
     animation: rotateUnderlayColor 10s 0s infinite;
 }
@@ -90,4 +100,32 @@ body {
     inset: 10px;
     border-radius: 10px;
 }
-/* clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 88% 99%, 0% 99%, */
+
+.survey {
+    position: absolute;
+    width: 48vw;
+    height: 75vh;
+    z-index: 10;
+    background-color: black;
+    margin-top: 20px;
+    margin-left:20px;
+    border-radius: 10px;
+    transition: all 0.1s;
+}
+.results {
+    position: absolute;
+    right: 0%;
+    width: 40vw;
+    height: 75vh;
+    z-index: 10;
+    background-color: black;
+    margin-top: 20px;
+    margin-right:20px;
+    border-radius: 10px;
+    transition: all 0.1s;
+}
+
+.hover:hover {
+    border: white 5px solid;
+    border-radius: 10px;
+}
