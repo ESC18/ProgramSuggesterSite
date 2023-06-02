@@ -17,11 +17,22 @@
         background-position: 0% 0%;
     }
 }
+@keyframes rotateUnderlayColor {
+    from {
+        transform: translate(-50%) rotate(0deg);
+        background-position: 0% 0%;
+    }
+
+    to {
+        transform: translate(-50%) rotate(360deg);
+        background-position: 300% 0%;
+    }
+}
 
 body {
     background-color: black;
     background-color: #151515;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .header {
     position: absolute;
@@ -33,8 +44,8 @@ body {
 }
 .Logo {
     position: absolute;
-    top: -30px;
-    height: 150px;
+    top: -3vh;
+    height: 8vw;
     left: 10px;
     z-index: 50;
 }
@@ -47,5 +58,36 @@ body {
     background-size: 500% 100%;
     animation: underlayColor 250s ease-in-out 0s infinite;
 }
+.content {
+    position: absolute;
+    top: 130px;
+    width: 98vw;
+    height: 80vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.content::before {
+    content: '';
+    left: 50%;
+    top: -100vh;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 20vw;
+    height: 300vh;
+    background: linear-gradient(-90deg, #F3B700, #F18701, #DF2935, #961f01, #DF2935, #F18701,#F3B700);
+    background-size: 300% 100%;
+    animation: rotateUnderlayColor 10s 0s infinite;
+}
 
+.content::after {
+    content: '';
+    position: absolute;
+    background-color: #151515;
+    inset: 10px;
+    border-radius: 10px;
+}
 /* clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 88% 99%, 0% 99%, */
