@@ -1,5 +1,5 @@
 # SC's Tool's: Program Language Selector Survey
-<img src="SCLogoWTitle.png">
+
 #### By Elijah Shawn Cartwright
 ## Technologies used:
 * HTML
