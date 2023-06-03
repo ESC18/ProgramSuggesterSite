@@ -17,7 +17,7 @@ This web application is a small survey site which can be used as a tool to deter
 3. Open index.html.
 
 ## Known Bugs:
-* Site is not fully responsive and will only function for screens 1700 px wide. For Results - use a monitor with a 1080x1920 resolution.
+* Site is not fully responsive and will only function for screens 1700 px wide and wider. For Best Results - use a monitor with a 1080x1920 resolution.
 * Ocassionally depending on the selection - there may be ties in 'scores' for two or more of the langauges, this will cause there to be an error message displayed instead of a language result, you can fix this by changing your past selection slightly. The most common two languages to get mixed up are Javascript and Python.
 
 ## Github Pages:
