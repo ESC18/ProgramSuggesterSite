@@ -51,8 +51,8 @@ body {
 
 .Logo {
     position: absolute;
-    top: -3vh;
-    height: 8vw;
+    top: -30px;
+    height: 150px;
     left: 10px;
     z-index: 50;
 }
@@ -100,6 +100,9 @@ body {
     inset: 10px;
     border-radius: 10px;
 }
+form {
+    height: inherit;
+}
 
 .survey {
     position: absolute;
@@ -131,7 +134,7 @@ label {
     position: relative;
     left: 10px;
     display: block;
-    font-size: 40px;
+    font-size: 2.5vw;
     background: linear-gradient(-90deg, #F3B700, #F18701, #DF2935, #961f01, #DF2935, #F18701, #F3B700);
     background-size: 300% 100%;
     -webkit-background-clip: text;
@@ -150,22 +153,19 @@ select{
     background-color: #151515;
     border-radius: 10px;
   }
+
 select option { 
     color: #4357AD; 
     font-family: Roboto Mono;
 }
-#Beginner {
+
+button {
+    position: relative;
     display: block;
-}
-#Platform {
-    display: block;
-}
-#FrontBack {
-    display: block;
-}
-#BusFun {
-    display: block;
-}
-#LogicUI {
-    display: block;
+    background-color: #151515;
+    color: #FF6600;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
