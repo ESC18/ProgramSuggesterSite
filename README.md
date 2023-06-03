@@ -25,4 +25,8 @@ _coming soon..._
 
 ## Licensing:
 MIT
+<<<<<<< HEAD
 Copyright (c) 2023 _Elijah Shawn Cartwright_
+=======
+Copyright (c) 2023 _Elijah Shawn Cartwright_
+>>>>>>> 96dfedbb143c1fa1c97b8d0f7d52b1e97d54b5a1
