@@ -100,6 +100,7 @@ body {
     inset: 10px;
     border-radius: 10px;
 }
+
 form {
     height: inherit;
 }
@@ -111,12 +112,13 @@ form {
     z-index: 10;
     background-color: black;
     margin-top: 20px;
-    margin-left:20px;
+    margin-left: 20px;
     border-radius: 10px;
     transition: all 0.1s;
     color: white;
     font-family: Quicksand;
 }
+
 .results {
     position: absolute;
     right: 0%;
@@ -125,7 +127,7 @@ form {
     z-index: 10;
     background-color: black;
     margin-top: 20px;
-    margin-right:20px;
+    margin-right: 20px;
     border-radius: 10px;
     transition: all 0.1s;
 }
@@ -142,7 +144,7 @@ label {
     animation: underlayColor 250s ease-in-out 0s infinite;
 }
 
-select{
+select {
     margin-left: 20px;
     width: 150px;
     height: 30px;
@@ -152,10 +154,10 @@ select{
     font-family: Roboto Mono;
     background-color: #151515;
     border-radius: 10px;
-  }
+}
 
-select option { 
-    color: #4357AD; 
+select option {
+    color: #4357AD;
     font-family: Roboto Mono;
 }
 
@@ -171,12 +173,55 @@ button {
     width: 100px;
     transition: all 0.1s;
 }
+
 button:hover {
     background-color: white;
-    background: linear-gradient(-90deg,#21D19F,#06AED5,#4357AD, #06AED5, #21D19F);
+    background: linear-gradient(-90deg, #21D19F, #06AED5, #4357AD, #06AED5, #21D19F);
     background-size: 300% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: underlayColor 20s ease-in-out 0s infinite;
     transition: all 0.1s;
+}
+
+#Py {
+    position: absolute;
+    width: 25vw;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0;
+}
+
+#Js {
+    position: absolute;
+    width: 25vw;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0;
+}
+
+#Sw {
+    position: absolute;
+    width: 25vw;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0;
+}
+
+#ResultHead {
+    position: absolute;
+    background: linear-gradient(-90deg, #F3B700, #F18701, #DF2935, #961f01, #DF2935, #F18701, #F3B700);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: underlayColor 250s ease-in-out 0s infinite;
+    font-family: Quicksand;
+    margin-left: 15%;
+    top: 80%;
 }
