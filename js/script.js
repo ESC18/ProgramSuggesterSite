@@ -122,7 +122,6 @@ window.onload = function () {
         } else {
             H1.innerHTML = "There's an issue with your selection - Look for Red selections or try a different combo of options";
         }
-        console.log(Python,Swift,Javascript)
         form.reset();
     } 
 
