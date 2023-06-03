@@ -154,4 +154,18 @@ select option {
     color: #4357AD; 
     font-family: Roboto Mono;
 }
-
+#Beginner {
+    display: block;
+}
+#Platform {
+    display: block;
+}
+#FrontBack {
+    display: block;
+}
+#BusFun {
+    display: block;
+}
+#LogicUI {
+    display: block;
+}
