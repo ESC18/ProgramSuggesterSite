@@ -86,11 +86,11 @@ body {
     top: -100vh;
     transform: translate(-50%, -50%);
     position: absolute;
-    width: 20vw;
+    width: 15vw;
     height: 300vh;
     background: linear-gradient(-90deg, #F3B700, #F18701, #DF2935, #961f01, #DF2935, #F18701, #F3B700);
     background-size: 300% 100%;
-    animation: rotateUnderlayColor 10s 0s infinite;
+    animation: rotateUnderlayColor 20s 0s infinite;
 }
 
 .content::after {
@@ -168,4 +168,15 @@ button {
     border-radius: 10px;
     margin-top: 20px;
     margin-left: 20px;
+    width: 100px;
+    transition: all 0.1s;
+}
+button:hover {
+    background-color: white;
+    background: linear-gradient(-90deg,#21D19F,#06AED5,#4357AD, #06AED5, #21D19F);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: underlayColor 20s ease-in-out 0s infinite;
+    transition: all 0.1s;
 }
